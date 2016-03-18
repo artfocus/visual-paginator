@@ -15,10 +15,13 @@ class DoctrineHelper
 	/**
 	 * @param DoctrinePaginator $doctrinePaginator
 	 * @param VisualPaginator $visualPaginator
+	 * @param int $itemsPerPage
 	 * @return DoctrinePaginator
 	 */
-	public static function setup(DoctrinePaginator $doctrinePaginator, VisualPaginator $visualPaginator)
+	public static function setup(DoctrinePaginator $doctrinePaginator, VisualPaginator $visualPaginator, $itemsPerPage = 50)
 	{
+		$visualPaginator->setItems($doctrinePaginator->count(), $itemsPerPage);
+
 		$doctrinePaginator
 			->getQuery()
 			->setFirstResult($visualPaginator->getOffset())
