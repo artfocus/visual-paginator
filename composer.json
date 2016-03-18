@@ -1,6 +1,7 @@
 {
     "name": "artfocus/visual-paginator",
     "description": "Visual Paginator for Nette Framework",
+    "keywords": ["pagination", "paginator", "nette", "doctrine"],
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
