@@ -18,7 +18,7 @@ class DoctrineHelper
 	 * @param int $itemsPerPage
 	 * @return DoctrinePaginator
 	 */
-	public static function setup(DoctrinePaginator $doctrinePaginator, VisualPaginator $visualPaginator, $itemsPerPage = 50)
+	public static function apply(DoctrinePaginator $doctrinePaginator, VisualPaginator $visualPaginator, $itemsPerPage = 50)
 	{
 		$visualPaginator->setItems($doctrinePaginator->count(), $itemsPerPage);
 
