@@ -16,6 +16,9 @@
         "nette/http": "^2.3",
         "nette/di": "^2.3"
     },
+    "require-dev": {
+        "doctrine/orm": "^2.5"
+    },
     "autoload": {
         "psr-4": {
             "Artfocus\\VisualPaginator\\": "src"
