@@ -1,0 +1,19 @@
+{
+    "name": "artfocus/visual-paginator",
+    "description": "Visual Paginator for Nette Framework",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jaroslav Hranička",
+            "email": "hranicka@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">= 5.6",
+        "nette/utils": "^2.3",
+        "nette/application": "^2.3",
+        "nette/http": "^2.3",
+        "nette/di": "^2.3"
+    }
+}
