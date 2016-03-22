@@ -18,6 +18,9 @@ trait VisualPaginatorTrait
 	 */
 	public $visualPaginatorFactory;
 
+	/**
+	 * @return VisualPaginator\VisualPaginator
+	 */
 	protected function createComponentPaginator()
 	{
 		return $this->visualPaginatorFactory->create();
