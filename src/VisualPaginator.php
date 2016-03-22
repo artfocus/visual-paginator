@@ -48,6 +48,14 @@ class VisualPaginator extends Application\UI\Control
 	/**
 	 * @return int
 	 */
+	public function getPage()
+	{
+		return $this->page;
+	}
+
+	/**
+	 * @return int
+	 */
 	public function getLimit()
 	{
 		return $this->getPaginator()->getLength();
