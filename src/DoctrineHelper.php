@@ -16,9 +16,9 @@ class DoctrineHelper
 	 * @param DoctrinePaginator $doctrinePaginator
 	 * @param VisualPaginator $visualPaginator
 	 * @param int $itemsPerPage
-	 * @return DoctrinePaginator
+	 * @return array
 	 */
-	public static function apply(DoctrinePaginator $doctrinePaginator, VisualPaginator $visualPaginator, $itemsPerPage = 50)
+	public static function apply(DoctrinePaginator $doctrinePaginator, VisualPaginator $visualPaginator, $itemsPerPage = 50):array
 	{
 		$visualPaginator->setItems($doctrinePaginator->count(), $itemsPerPage);
 
@@ -27,7 +27,7 @@ class DoctrineHelper
 			->setFirstResult($visualPaginator->getOffset())
 			->setMaxResults($visualPaginator->getLimit());
 
-		return $doctrinePaginator;
+		return iterator_to_array($doctrinePaginator);
 	}
 
 }
